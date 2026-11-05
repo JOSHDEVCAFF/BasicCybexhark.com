@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A clean, static Cybexhark training gear storefront demo.">
+    <title>Shop | Cybexhark</title>
+    <link rel="stylesheet" href="store.css">
+    <link rel="icon" href="CybexIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="store-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Cybexhark shop home">
+                <img class="brand-mark" src="CybexIcon.png" alt="">
+                <span class="brand-copy"><strong>CYBEXHARK</strong><small>TRAIN WITH PURPOSE</small></span>
+            </a>
+            <div class="header-note"><span class="status-dot"></span> TRAINING ESSENTIALS, DELIVERED</div>
+            <a class="header-cart" href="checkout.html">Your bag <span class="cart-count" aria-live="polite">0</span><span aria-hidden="true">→</span></a>
+        </header>
+
+        <nav class="side-nav" aria-label="Store navigation">
+            <p class="nav-label">Explore</p>
+            <a class="nav-link is-current" href="index.html" aria-current="page"><span>01</span> Shop</a>
+            <a class="nav-link" href="about.html"><span>02</span> About</a>
+            <a class="nav-link" href="services.html"><span>03</span> Services</a>
+            <a class="nav-link" href="contact.html"><span>04</span> Contact</a>
+            <a class="nav-link" href="faq.html"><span>05</span> FAQ</a>
+            <a class="nav-link" href="portfolio.html"><span>06</span> Portfolio</a>
+            <a class="nav-link" href="profile.html"><span>07</span> Profile</a>
+            <a class="nav-link" href="org-chart.html"><span>08</span> Org chart</a>
+            <a class="nav-link" href="#featured"><span>09</span> Featured gear</a>
+            <a class="nav-link" href="checkout.html"><span>10</span> Checkout</a>
+            <a class="nav-link" href="payment.html"><span>11</span> Payment</a>
+            <div class="nav-help">
+                <span class="help-icon" aria-hidden="true">?</span>
+                <p>Need a hand?</p>
+                <a href="contact.html">Contact our team</a>
+            </div>
+        </nav>
+
+        <main class="page-content">
+            <section class="hero" aria-labelledby="hero-title">
+                <p class="eyebrow">GEAR FOR THE WORK YOU PUT IN</p>
+                <h1 id="hero-title">Make every<br><span>rep count.</span></h1>
+                <p class="hero-copy">Reliable training essentials and performance favorites for wherever your next session takes you.</p>
+                <a class="button button-dark" href="#featured">Explore the collection <span aria-hidden="true">↓</span></a>
+                <div class="hero-art" aria-hidden="true">
+                    <span class="hero-orbit orbit-one"></span>
+                    <span class="hero-orbit orbit-two"></span>
+                    <span class="hero-star">✳</span>
+                    <span class="hero-word">STRONG<br>STARTS<br>HERE.</span>
+                    <span class="hero-caption">CYBEXHARK / EST. FOR YOUR NEXT SET</span>
+                </div>
+                <div class="hero-index"><strong>01</strong><span>—</span> SHOP COLLECTION</div>
+            </section>
+
+            <section class="collection" id="featured" aria-labelledby="collection-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">THE CYBEXHARK LINEUP</p>
+                        <h2 id="collection-title">Ready when you are.</h2>
+                    </div>
+                    <p class="section-aside">All 12 training essentials, supplements, and equipment in one place.</p>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image image-sand">
+                            <span class="product-tag">TRAINING</span>
+                            <img src="straps.jpg" alt="Lifting wrist straps" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Lifting Wrist Straps</h3><p>Grip support for your heavy sets.</p></div><strong>$20.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Lifting Wrist Straps" data-price="20.99" data-description="Grip support for your heavy sets." data-image="straps.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-lime">
+                            <span class="product-tag">LIFTING</span>
+                            <img src="belt.jpg" alt="Jet black lever belt" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Jet Black Lever Belt</h3><p>Solid support for every lift.</p></div><strong>$50.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Jet Black Lever Belt" data-price="50.99" data-description="Solid support for every lift." data-image="belt.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-peach">
+                            <span class="product-tag">RECOVERY</span>
+                            <img src="Whey%20Protein.jpg" alt="Whey protein powder" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Whey Protein Powder</h3><p>A post-workout staple.</p></div><strong>$55.00</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Whey Protein Powder" data-price="55.00" data-description="A post-workout staple." data-image="Whey%20Protein.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-blue">
+                            <span class="product-tag">CONDITIONING</span>
+                            <img src="Splay%20Nylon%20Speed%20Rope%2010%20Foot%20-%20Purple%20_%2010%20Foot.jpg" alt="Purple nylon speed rope" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Splay Nylon Speed Rope</h3><p>Lightweight, quick, and ready to go.</p></div><strong>$12.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Splay Nylon Speed Rope" data-price="12.99" data-description="Lightweight, quick, and ready to go." data-image="Splay%20Nylon%20Speed%20Rope%2010%20Foot%20-%20Purple%20_%2010%20Foot.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-peach">
+                            <span class="product-tag">SUPPLEMENTS</span>
+                            <img src="euphoria.png" alt="Euphoria pre-workout supplement" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Euphoria Pre-Workout</h3><p>Pre-workout support for your training routine.</p></div><strong>$59.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Euphoria Pre-Workout" data-price="59.99" data-description="Pre-workout support for your training routine." data-image="euphoria.png">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-lime">
+                            <span class="product-tag">SUPPLEMENTS</span>
+                            <img src="creatine.jpg" alt="Creatine monohydrate supplement" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Creatine Monohydrate</h3><p>A simple addition to your supplement stack.</p></div><strong>$69.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Creatine Monohydrate" data-price="69.99" data-description="A simple addition to your supplement stack." data-image="creatine.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-sand">
+                            <span class="product-tag">STRENGTH</span>
+                            <img src="dumbell.jpg" alt="10 kilogram dumbbell" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Dumbbells (10KG)</h3><p>Versatile weight for strength training.</p></div><strong>$20.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Dumbbells (10KG)" data-price="20.99" data-description="Versatile weight for strength training." data-image="dumbell.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-blue">
+                            <span class="product-tag">APPAREL</span>
+                            <img src="david.jpg" alt="Black compression T-shirt" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Compression T-shirt</h3><p>Training apparel with a close, supportive fit.</p></div><strong>$25.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Compression T-shirt" data-price="25.99" data-description="Training apparel with a close, supportive fit." data-image="david.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-sand">
+                            <span class="product-tag">STRENGTH EQUIPMENT</span>
+                            <img src="Bench.jpg" alt="Bench press machine" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Bench Press Machine</h3><p>A dedicated setup for pressing workouts.</p></div><strong>$1,099.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Bench Press Machine" data-price="1099.99" data-description="A dedicated setup for pressing workouts." data-image="Bench.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-peach">
+                            <span class="product-tag">STRENGTH EQUIPMENT</span>
+                            <img src="shoulder.jpg" alt="Shoulder press machine" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Shoulder Press Machine</h3><p>Targeted equipment for shoulder training.</p></div><strong>$1,199.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Shoulder Press Machine" data-price="1199.99" data-description="Targeted equipment for shoulder training." data-image="shoulder.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-lime">
+                            <span class="product-tag">STRENGTH EQUIPMENT</span>
+                            <img src="Squat.jpg" alt="Squat rack" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Squat Rack</h3><p>A sturdy foundation for lower-body lifts.</p></div><strong>$999.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Squat Rack" data-price="999.99" data-description="A sturdy foundation for lower-body lifts." data-image="Squat.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image image-blue">
+                            <span class="product-tag">STRENGTH EQUIPMENT</span>
+                            <img src="Lats.jpg" alt="Lat pulldown machine" loading="lazy">
+                        </div>
+                        <div class="product-details"><div><h3>Lat Pulldown Machine</h3><p>Build your back training setup.</p></div><strong>$1,399.99</strong></div>
+                        <button class="add-to-cart" type="button" data-title="Lat Pulldown Machine" data-price="1399.99" data-description="Build your back training setup." data-image="Lats.jpg">Add to cart <span aria-hidden="true">+</span></button>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-rail" aria-label="Store information">
+            <div class="rail-block">
+                <p class="rail-label">YOUR NEXT STEP</p>
+                <h2>Good gear.<br>Better sessions.</h2>
+                <p>Thoughtful picks for the work you do in and out of the gym.</p>
+                <a class="rail-link" href="services.html">Explore our services <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="rail-block rail-benefits">
+                <p class="rail-label">THE DETAILS</p>
+                <p><span>01</span> Browser-saved cart</p>
+                <p><span>02</span> Clear order summary</p>
+                <p><span>03</span> Support when you need it</p>
+            </div>
+            <div class="rail-stamp" aria-hidden="true">MOVE<br>WITH<br>INTENT<span>✳</span></div>
+        </aside>
+
+        <footer class="site-footer">
+            <span>© 2026 CYBEXHARK</span>
+            <span>BUILT FOR THE NEXT REP.</span>
+            <span class="demo-note">CHECKOUT PREVIEW · NO PAYMENTS ARE PROCESSED</span>
+        </footer>
+    </div>
+    <script src="store.js" defer></script>
+</body>
+</html>

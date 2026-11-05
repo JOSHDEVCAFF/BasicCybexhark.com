@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preview the Cybexhark delivery and payment step.">
+    <title>Payment | Cybexhark</title>
+    <link rel="stylesheet" href="store.css">
+    <link rel="icon" href="CybexIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="store-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Cybexhark shop home">
+                <img class="brand-mark" src="CybexIcon.png" alt="">
+                <span class="brand-copy"><strong>CYBEXHARK</strong><small>TRAIN WITH PURPOSE</small></span>
+            </a>
+            <div class="header-note"><span class="status-dot"></span> ALMOST AT THE FINISH LINE</div>
+            <a class="header-cart" href="checkout.html">Order total <span id="payment-total">$0.00</span></a>
+        </header>
+
+        <nav class="side-nav" aria-label="Store navigation">
+            <p class="nav-label">Explore</p>
+            <a class="nav-link" href="index.html"><span>01</span> Shop</a>
+            <a class="nav-link" href="about.html"><span>02</span> About</a>
+            <a class="nav-link" href="services.html"><span>03</span> Services</a>
+            <a class="nav-link" href="contact.html"><span>04</span> Contact</a>
+            <a class="nav-link" href="faq.html"><span>05</span> FAQ</a>
+            <a class="nav-link" href="portfolio.html"><span>06</span> Portfolio</a>
+            <a class="nav-link" href="profile.html"><span>07</span> Profile</a>
+            <a class="nav-link" href="org-chart.html"><span>08</span> Org chart</a>
+            <a class="nav-link" href="index.html#featured"><span>09</span> Featured gear</a>
+            <a class="nav-link" href="checkout.html"><span>10</span> Checkout</a>
+            <a class="nav-link is-current" href="payment.html" aria-current="page"><span>11</span> Payment</a>
+            <div class="nav-help"><span class="help-icon" aria-hidden="true">?</span><p>Need a hand?</p><a href="contact.html">Contact our team</a></div>
+        </nav>
+
+        <main class="page-content checkout-content">
+            <section class="page-intro">
+                <p class="eyebrow">STEP 02 / DELIVERY &amp; PAYMENT</p>
+                <h1>Make it yours<span class="title-period">.</span></h1>
+                <p>Fill in your delivery details and preview the final checkout step.</p>
+            </section>
+
+            <div class="checkout-layout payment-layout">
+                <form class="payment-form" action="order-complete.html" method="post">
+                    <section class="form-section" aria-labelledby="delivery-title">
+                        <div class="form-section-heading"><span class="step-number">01</span><div><h2 id="delivery-title">Delivery details</h2><p>Where should we send your gear?</p></div></div>
+                        <div class="field-grid">
+                            <label>First name<input type="text" autocomplete="given-name" required></label>
+                            <label>Last name<input type="text" autocomplete="family-name" required></label>
+                            <label class="field-full">Email address<input type="email" autocomplete="email" placeholder="you@example.com" required></label>
+                            <label class="field-full">Street address<input type="text" autocomplete="street-address" required></label>
+                            <label>City<input type="text" autocomplete="address-level2" required></label>
+                            <label>Postal code<input type="text" autocomplete="postal-code" required></label>
+                        </div>
+                    </section>
+
+                    <section class="form-section" aria-labelledby="payment-title">
+                        <div class="form-section-heading"><span class="step-number">02</span><div><h2 id="payment-title">Payment method</h2><p>Choose an option to preview the payment step.</p></div></div>
+                        <div class="payment-options">
+                            <label class="payment-option"><input type="radio" name="payment-method" value="card" checked><span class="radio-mark"></span><span class="payment-option-copy"><strong>Credit or debit card</strong><small>Visa, Mastercard and more</small></span><span class="payment-symbol" aria-hidden="true">▰</span></label>
+                            <label class="payment-option"><input type="radio" name="payment-method" value="gcash"><span class="radio-mark"></span><span class="payment-option-copy"><strong>GCash</strong><small>Mobile wallet</small></span><span class="payment-symbol" aria-hidden="true">G</span></label>
+                            <label class="payment-option"><input type="radio" name="payment-method" value="maya"><span class="radio-mark"></span><span class="payment-option-copy"><strong>Maya</strong><small>Digital wallet</small></span><span class="payment-symbol" aria-hidden="true">M</span></label>
+                        </div>
+                        <p class="payment-preview-note" id="payment-preview-note" aria-live="polite">Card payment is shown as a preview only. This page does not accept or process payment details.</p>
+                    </section>
+                    <p class="demo-warning"><strong>Checkout preview:</strong> Do not enter real personal or payment details. This form does not send or save information, and no payment is processed.</p>
+                    <button class="button button-lime button-full" type="submit">Preview order confirmation <span aria-hidden="true">→</span></button>
+                </form>
+
+                <aside class="summary-panel compact-summary" aria-label="Order total">
+                    <p class="rail-label">YOUR ORDER</p>
+                    <div class="mini-order"><span id="payment-item-count">0 items</span><a href="checkout.html">Review</a></div>
+                    <div class="summary-line"><span>Subtotal</span><strong id="payment-subtotal">$0.00</strong></div>
+                    <div class="summary-line"><span>Shipping</span><strong class="free-shipping">FREE</strong></div>
+                    <div class="summary-total"><span>Total</span><strong id="payment-summary-total">$0.00</strong></div>
+                    <p class="secure-caption"><span aria-hidden="true">◇</span> A checkout preview, not a real transaction.</p>
+                    <a class="back-link" href="checkout.html">← Back to order review</a>
+                </aside>
+            </div>
+        </main>
+
+        <aside class="right-rail" aria-label="Payment information">
+            <div class="rail-block"><p class="rail-label">PAY YOUR WAY</p><h2>One more step<br>to your next set.</h2><p>Choose from familiar payment options in this checkout preview.</p></div>
+            <div class="rail-block rail-benefits"><p class="rail-label">PAYMENT OPTIONS</p><p><span>01</span> Credit / debit card</p><p><span>02</span> GCash</p><p><span>03</span> Maya</p></div>
+            <div class="rail-stamp" aria-hidden="true">MOVE<br>WITH<br>INTENT<span>✳</span></div>
+        </aside>
+
+        <footer class="site-footer"><span>© 2026 CYBEXHARK</span><span>BUILT FOR THE NEXT REP.</span><span class="demo-note">CHECKOUT PREVIEW · NO PAYMENTS ARE PROCESSED</span></footer>
+    </div>
+    <script src="store.js" defer></script>
+</body>
+</html>

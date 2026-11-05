@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Review your Cybexhark cart and continue to the payment preview.">
+    <title>Checkout | Cybexhark</title>
+    <link rel="stylesheet" href="store.css">
+    <link rel="icon" href="CybexIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="store-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Cybexhark shop home">
+                <img class="brand-mark" src="CybexIcon.png" alt="">
+                <span class="brand-copy"><strong>CYBEXHARK</strong><small>TRAIN WITH PURPOSE</small></span>
+            </a>
+            <div class="header-note"><span class="status-dot"></span> YOUR ORDER, AT A GLANCE</div>
+            <a class="header-cart" href="index.html">Continue shopping <span aria-hidden="true">→</span></a>
+        </header>
+
+        <nav class="side-nav" aria-label="Store navigation">
+            <p class="nav-label">Explore</p>
+            <a class="nav-link" href="index.html"><span>01</span> Shop</a>
+            <a class="nav-link" href="about.html"><span>02</span> About</a>
+            <a class="nav-link" href="services.html"><span>03</span> Services</a>
+            <a class="nav-link" href="contact.html"><span>04</span> Contact</a>
+            <a class="nav-link" href="faq.html"><span>05</span> FAQ</a>
+            <a class="nav-link" href="portfolio.html"><span>06</span> Portfolio</a>
+            <a class="nav-link" href="profile.html"><span>07</span> Profile</a>
+            <a class="nav-link" href="org-chart.html"><span>08</span> Org chart</a>
+            <a class="nav-link" href="index.html#featured"><span>09</span> Featured gear</a>
+            <a class="nav-link is-current" href="checkout.html" aria-current="page"><span>10</span> Checkout</a>
+            <a class="nav-link" href="payment.html"><span>11</span> Payment</a>
+            <div class="nav-help"><span class="help-icon" aria-hidden="true">?</span><p>Need a hand?</p><a href="contact.html">Contact our team</a></div>
+        </nav>
+
+        <main class="page-content checkout-content">
+            <section class="page-intro">
+                <p class="eyebrow">STEP 01 / ORDER REVIEW</p>
+                <h1>Checkout<span class="title-period">.</span></h1>
+                <p>Review your items and quantities before choosing a payment method.</p>
+            </section>
+
+            <div class="checkout-layout">
+                <section class="order-panel" aria-labelledby="order-title">
+                    <div class="panel-heading"><h2 id="order-title">Your order <span class="item-count" id="item-count">0 ITEMS</span></h2><a href="index.html#featured">Add more</a></div>
+                    <div id="cart-items" aria-live="polite"></div>
+                    <p class="empty-cart-message" id="empty-cart-message" hidden>Your cart is empty. Head back to the shop to add some training gear.</p>
+                    <div class="shipping-note"><span aria-hidden="true">✳</span><p><strong>Shipping is on us.</strong><br>Standard delivery is included in this demo order.</p></div>
+                </section>
+
+                <aside class="summary-panel" aria-label="Order total">
+                    <p class="rail-label">ORDER SUMMARY</p>
+                    <div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+                    <div class="summary-line"><span>Shipping</span><strong class="free-shipping">FREE</strong></div>
+                    <div class="summary-line"><span>Taxes</span><span>Calculated at checkout</span></div>
+                    <div class="summary-total"><span>Estimated total</span><strong id="cart-total">$0.00</strong></div>
+                    <a class="button button-lime button-full" id="continue-to-payment" href="payment.html">Continue to payment <span aria-hidden="true">→</span></a>
+                    <p class="secure-caption"><span aria-hidden="true">◇</span> Checkout demo only. Payments are not processed.</p>
+                    <a class="back-link" href="index.html">← Back to the shop</a>
+                </aside>
+            </div>
+        </main>
+
+        <aside class="right-rail" aria-label="Checkout help">
+            <div class="rail-block"><p class="rail-label">CHECKOUT, SIMPLIFIED</p><h2>All the details.<br>None of the fuss.</h2><p>Your cart is saved in this browser while you shop.</p></div>
+            <div class="rail-block rail-benefits"><p class="rail-label">YOUR CHECKOUT</p><p><span>01</span> Review your items</p><p><span>02</span> Choose a payment option</p><p><span>03</span> Preview confirmation</p></div>
+            <div class="rail-stamp" aria-hidden="true">MOVE<br>WITH<br>INTENT<span>✳</span></div>
+        </aside>
+
+        <footer class="site-footer"><span>© 2026 CYBEXHARK</span><span>BUILT FOR THE NEXT REP.</span><span class="demo-note">CHECKOUT PREVIEW · NO PAYMENTS ARE PROCESSED</span></footer>
+    </div>
+    <script src="store.js" defer></script>
+</body>
+</html>

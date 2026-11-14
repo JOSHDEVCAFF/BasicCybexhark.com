@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Activity No. 5</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #071b45, #168bd1, #dcecff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: min(100%, 1120px);
+            text-align: center;
+            padding: clamp(20px, 4vw, 42px);
+        }
+
+        h1 {
+            color: white;
+            font-size: clamp(28px, 5vw, 42px);
+            line-height: 1.1;
+            margin: 0 0 10px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        p {
+            color: white;
+            font-size: clamp(15px, 2.5vw, 18px);
+            margin: 0 0 clamp(20px, 4vw, 32px);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+            gap: clamp(10px, 2vw, 18px);
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border: clamp(3px, 0.5vw, 5px) solid white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .gallery img:hover {
+                transform: scale(1.04);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            }
+        }
+
+        @media (max-width: 420px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 18px 8px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Photo Gallery</h1>
+        <p>Activity No.3 5 — 20 Pictures</p>
+
+        <div class="gallery">
+
+            <img src="https://picsum.photos/id/1015/200/200" alt="Picture 1">
+            <img src="https://picsum.photos/id/1016/200/200" alt="Picture 2">
+            <img src="https://picsum.photos/id/1018/200/200" alt="Picture 3">
+            <img src="https://picsum.photos/id/1019/200/200" alt="Picture 4">
+            <img src="https://picsum.photos/id/1020/200/200" alt="Picture 5">
+
+            <img src="https://picsum.photos/id/1024/200/200" alt="Picture 6">
+            <img src="https://picsum.photos/id/1025/200/200" alt="Picture 7">
+            <img src="https://picsum.photos/id/1027/200/200" alt="Picture 8">
+            <img src="https://picsum.photos/id/1029/200/200" alt="Picture 9">
+            <img src="https://picsum.photos/id/1035/200/200" alt="Picture 10">
+
+            <img src="https://picsum.photos/id/1038/200/200" alt="Picture 11">
+            <img src="https://picsum.photos/id/1040/200/200" alt="Picture 12">
+            <img src="https://picsum.photos/id/1041/200/200" alt="Picture 13">
+            <img src="https://picsum.photos/id/1042/200/200" alt="Picture 14">
+            <img src="https://picsum.photos/id/1043/200/200" alt="Picture 15">
+
+            <img src="https://picsum.photos/id/1045/200/200" alt="Picture 16">
+            <img src="https://picsum.photos/id/1047/200/200" alt="Picture 17">
+            <img src="https://picsum.photos/id/1048/200/200" alt="Picture 18">
+            <img src="https://picsum.photos/id/1050/200/200" alt="Picture 19">
+            <img src="https://picsum.photos/id/1052/200/200" alt="Picture 20">
+
+        </div>
+
+    </div>
+
+</body>
+</html>

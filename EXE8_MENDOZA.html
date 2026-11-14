@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+        .gallery {
+            width: 585px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+        }
+
+        .gallery a {
+            display: block;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MY GALLERY</h1>
+
+    <div class="gallery">
+
+        <!-- Row 1 -->
+        <a href="https://www.google.com" target="_blank">
+            <img src="mountaij.jpg" alt="Mountain">
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <img src="sunset.jpg" alt="Sunset">
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <img src="tulips.jpg" alt="Flowers">
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <img src="waterfall.webp" alt="Waterfall">
+        </a>
+
+        <!-- Row 2 -->
+        <a href="https://www.google.com" target="_blank">
+            <img src="waterfall.webp" alt="Mountain">
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <img src="tulips.jpg" alt="Sunset">
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <img src="sunset.jpg" alt="Flowers">
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <img src="mountaij.jpg" alt="Waterfall">
+        </a>
+
+    </div>
+
+</body>
+</html>

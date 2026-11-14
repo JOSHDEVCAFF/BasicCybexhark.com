@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: General Knowledge</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: "Times New Roman", serif;
+            background: linear-gradient(135deg, #dbeafe, #f8fafc);
+            color: #222;
+        }
+
+        .quiz-container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 35px 45px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #173b8f;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-family: Arial, sans-serif;
+            margin-bottom: 35px;
+        }
+
+        .question {
+            background-color: #f8fafc;
+            border-left: 5px solid #2563eb;
+            padding: 18px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .question-text {
+            font-weight: bold;
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .choices {
+            margin-left: 15px;
+        }
+
+        .correct {
+            color: #15803d;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #555;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .quiz-container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <h1>Quiz: General Knowledge</h1>
+
+        <p class="subtitle">
+            Test your knowledge by checking the correct answers.
+        </p>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <div class="question-text">
+                1. Which is the largest continent in the world?
+            </div>
+
+            <div class="choices">
+                A. Africa<br>
+                <span class="correct">B. Asia</span><br>
+                C. Europe<br>
+                D. Australia
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <div class="question-text">
+                2. What is the boiling point of water at sea level?
+            </div>
+
+            <div class="choices">
+                A. 50°C<br>
+                B. 75°C<br>
+                <span class="correct">C. 100°C</span><br>
+                D. 150°C
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <div class="question-text">
+                3. Which organ pumps blood throughout the human body?
+            </div>
+
+            <div class="choices">
+                <span class="correct">A. Heart</span><br>
+                B. Brain<br>
+                C. Lungs<br>
+                D. Stomach
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <div class="question-text">
+                4. What is the currency of Japan?
+            </div>
+
+            <div class="choices">
+                A. Won<br>
+                <span class="correct">B. Yen</span><br>
+                C. Dollar<br>
+                D. Peso
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <div class="question-text">
+                5. Which animal is known as the "King of the Jungle"?
+            </div>
+
+            <div class="choices">
+                <span class="correct">A. Lion</span><br>
+                B. Elephant<br>
+                C. Tiger<br>
+                D. Gorilla
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <div class="question-text">
+                6. How many days are there in a leap year?
+            </div>
+
+            <div class="choices">
+                A. 364<br>
+                <span class="correct">B. 366</span><br>
+                C. 365<br>
+                D. 367
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <div class="question-text">
+                7. Which planet is closest to the Sun?
+            </div>
+
+            <div class="choices">
+                <span class="correct">A. Mercury</span><br>
+                B. Venus<br>
+                C. Earth<br>
+                D. Mars
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <div class="question-text">
+                8. What is the hardest natural substance on Earth?
+            </div>
+
+            <div class="choices">
+                A. Gold<br>
+                B. Iron<br>
+                <span class="correct">C. Diamond</span><br>
+                D. Silver
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <div class="question-text">
+                9. Which language has the most native speakers in the world?
+            </div>
+
+            <div class="choices">
+                A. English<br>
+                <span class="correct">B. Mandarin Chinese</span><br>
+                C. Spanish<br>
+                D. French
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <div class="question-text">
+                10. How many sides does a hexagon have?
+            </div>
+
+            <div class="choices">
+                A. Four<br>
+                B. Five<br>
+                <span class="correct">C. Six</span><br>
+                D. Eight
+            </div>
+        </div>
+
+        <div class="footer">
+            General Knowledge Quiz
+        </div>
+
+    </div>
+
+</body>
+</html>

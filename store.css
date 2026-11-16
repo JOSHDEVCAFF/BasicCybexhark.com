@@ -112,7 +112,7 @@ button, input { font: inherit; }
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 31px 18px 22px;
+    padding: 31px 18px 0;
     background: #101010;
     color: var(--ink);
 }
@@ -485,10 +485,9 @@ button, input { font: inherit; }
     .mobile-menu-toggle[aria-expanded="true"] .menu-toggle-icon span:nth-child(2) { opacity: 0; }
     .mobile-menu-toggle[aria-expanded="true"] .menu-toggle-icon span:last-child { transform: translateY(-5px) rotate(-45deg); }
     .menu-toggle-label { font-size: 10px; font-weight: 650; }
-    .side-nav { position: fixed; z-index: 25; top: 70px; right: auto; bottom: 0; left: 0; width: min(84vw, 320px); height: auto; max-height: none; overflow-x: hidden; overflow-y: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 23px 18px max(22px, env(safe-area-inset-bottom)); border-right: 1px solid var(--line); box-shadow: 16px 0 45px #0008; transform: translateX(-105%); pointer-events: none; transition: transform .25s ease; }
+    .side-nav { position: fixed; z-index: 25; top: 70px; right: auto; bottom: auto; left: 0; width: min(84vw, 320px); height: calc(100vh - 70px); height: calc(100dvh - 70px); max-height: none; overflow-x: hidden; overflow-y: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 23px 18px env(safe-area-inset-bottom); border-right: 1px solid var(--line); box-shadow: 16px 0 45px #0008; transform: translateX(-105%); pointer-events: none; transition: transform .25s ease; }
     .side-nav.is-open { transform: translateX(0); pointer-events: auto; }
     .nav-label { display: block; padding: 0 9px 13px; }
-    .nav-help { display: block; margin-top: 20px; }
     .nav-link { justify-content: flex-start; gap: 11px; padding: 12px 9px; border-right: 0; border-bottom: 1px solid #ffffff24; font-size: 13px; }
     .nav-link:last-of-type { border-right: 0; }
     .nav-link:hover, .nav-link:focus-visible { padding-left: 14px; }
@@ -498,7 +497,7 @@ button, input { font: inherit; }
     .hero { min-height: 390px; padding: 41px 22px 33px; }
     .hero h1 { max-width: 70%; margin-top: 28px; font-size: clamp(45px, 11vw, 68px); }
     .hero-copy { max-width: 58%; font-size: 11px; }
-    .hero-art { top: 94px; right: -34%; width: 67%; height: 240px; opacity: .83; }
+    .hero-art { top: 94px; right: -34%; width: 67%; height: 500px; opacity: .83; }
     .hero-star { top: 26px; right: 25px; font-size: 39px; }
     .hero-word, .hero-caption { display: none; }
     .hero-index { right: 20px; bottom: 14px; }
